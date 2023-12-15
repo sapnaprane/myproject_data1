@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Data Input via website</h2>
+
+<form method="post" action="{% url 'create_post' %}">
+    {% csrf_token %}
+  <label for="title">Title:</label><br>
+  <input type="text" name="title" required><br>
+  
+  <label for="content">Content:</label><br>
+  <textarea name="content" required></textarea><br>
+
+  <label for="date">Date:</label><br>
+  <input type="date" name="date" required><br>
+
+  <input type="submit" value="Create Post">
+</form> 
+</body>
+</html>

@@ -1,0 +1,7 @@
+<!-- blog/templates/show_posts.html -->
+<h2>Blog Posts:</h2>
+<ul>
+    {% for post in posts %}
+        <li>{{ post.title }} - {{ post.content }}</li>
+    {% endfor %}
+</ul>
